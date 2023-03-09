@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+int main(){
+int n;
+cin>>n;
+int arr1[n],arr2[n];
+
+for(int i=0;i<=n-1;i++)
+{
+    cin>>arr1[i];
+    cin>>arr2[i];
+}
+int c=0;
+for(int i=0;i<=n-1;i++)
+{
+   int d=arr1[i];
+   int e=arr2[i];
+   int j=i+1;
+   while(j<=n-1&&e>=arr1[j])
+   {
+    e=arr2[j];
+    j++;
+   }
+   int m=e-d;
+   if(m>c)
+   c=m;
+}
+cout<<c;
+
+
+
+
+return 0;
+}

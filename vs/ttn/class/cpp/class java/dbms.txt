@@ -1,0 +1,65 @@
+claasues are imp
+WHERE clause;
+used with select insert update delete;
+
+SYNTAX;
+where conditions;
+
+eg: select*from name where address='mau';
+eg2:select*from name where address='mau' and/or officer id<5;
+ and / or folow there truth table;
+
+//
+distinct used to select diffrent values
+
+order by name [asc/desc];
+select*from name where address='mau';
+order by oficer_name asc/desc;
+
+eg2 select ofname,adress from oficer where ofcer<5 order by--- desc, adress asc;
+
+//
+GROUP BY
+
+SELECT ADD COUNT(*) FROM OFCIER GROUP BY ADRESS;
+
+(3)select emp name sum(workinhhrs) as "tgcex"
+from emplyess
+group by empname;
+
+(4)
+select --- avg(working) as"---" 
+from emp
+froup by ---;
+//having
+
+
+
+23/1/23:
+
+aggregate fxn
+
+count fxn:
+
+eg:select count(empname)from employ;
+eg2: select count(*)fromemp where emp age >32;
+eg3: 
+eg4: select emp_name,city,count(*)from employees group by city;
+
+sum fxn:
+eg: select sum(----)as "twg"from table;
+eg2: select sum(----)as "twg"from table where --->--;
+*eg3:select empid,empname ,occupation, sum(working hr)total working hour from employees group by occupation having sum((working hr)>24;
+
+avgg fxn:
+
+eg:select avg(--)avg_hrs from --- where --->--;
+
+mysql indexes
+l
+min fxn:
+eg: select min(--) as -- from--;
+
+group concatination:
+select emp id,name -----
+group by concat(--)as "gerbrt" from -- group by --;
